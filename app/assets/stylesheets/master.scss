@@ -1,5 +1,18 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Padauk');
 
+h1
+{
+  font-family: 'Padauk', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+h2
+{
+  font-family: 'Padauk', sans-serif;
+
+}
 .clear
 {
   clear: both;
@@ -72,6 +85,8 @@
   color: black;
   font-size: 25px;
   border-bottom: 1px solid #dfdfdf;
+  font-family: 'Padauk', sans-serif;
+  font-weight: bold;
 }
 
 header
