@@ -4,6 +4,7 @@
     <title>Quotey</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <meta name="turbolinks-cache-control" content="no-preview">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -37,6 +38,11 @@
     <br class="clear">
 
     <div class="container">
+      <% if flash[:error].present? %>
+        <div class="col-10 offset-1 alert alert-danger">
+        <%= flash[:error].html_safe %>
+      </div>
+      <% end %>
       <%= yield %>
     </div>
 
